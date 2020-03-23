@@ -1,0 +1,21 @@
+body {
+    background-color: azure;
+}
+
+h1 {
+    color: brown;
+    text-align: center;
+}
+
+/* 注释的方式 */
+p {
+    color: cadetblue;
+    font-family: 'Times New Roman';
+    font-size: 20px;
+}
+
+/* ID选择器 */
+#para1 {
+    text-align: right;
+    color: darkviolet;
+}
