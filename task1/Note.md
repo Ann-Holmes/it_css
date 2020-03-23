@@ -1,96 +1,5 @@
 [toc]
 
-# 环境配置
-
-## 重装阿里云服务器
-
-- 登录到阿里云ECS云服务器控制台；
-
-- 找到需要重装系统的ECS实例，先停止实例：点击“更多”---“实例状态”---“停止”
-    （如果实例已经停止，请忽略此步骤）
-
-- 点击“更多”---“磁盘和镜像”---“更换系统盘”
-
-    > 重装系统即更换系统盘。更换系统盘原系统盘会被释放，数据无法恢复，所以，更换系统盘之前一定要做好备份！
-
-## 阿里云服务器添加本地的ssh秘钥
-
-- 先删除之前保存的私钥
-
-    ```shell
-    ssh-keygen -f "/home/user/.ssh/known_hosts" -R "server"
-    ```
-
-- 在阿里云控制台创建新的秘钥对，下载私钥到桌面，并绑定到相应的实例
-
-- 在客户端使用如下命令连接
-
-    ```shell
-    # 连接
-    ssh -i Desktop/somename.pem root@server
-    
-    # 创建一般用户
-    sudo adduser <user_name>
-    su - <user_name> # 切换到某一个用户
-    ```
-
-- 接下来可以用
-
-    ```shell
-    ssh <user_name>@116.62.177.102 # 连接
-    ```
-
-## 配置阿里云为git代码托管仓库
-
-### 配置
-
-- 在阿里云安装git
-
-    ```shell
-    sudo apt install git
-    ```
-
-- 创建一个`git`用户用来管理git仓库
-
-    ```shell
-    sudo adduser git
-    ```
-
-- 将本地客户端的公钥添加到服务器的`/home/git/.ssh/Authoried_keys`, 并赋予相应的执行权限. 
-
-    ```shell
-    sudo chmod 700 .ssh
-    sudo chmod 600 .ssh/authorized_keys
-    ```
-
-- 此外, 还需要配置`/etc/ssh/sshd_config`
-
-    将`#AuthorizedKeysFile %h/.ssh/authorized_keys`修改为`AuthorizedKeysFile /home/git/.ssh/authorized_keys`
-
-- 设置`git`账户只能使用`git-shell`访问服务器, 而不能直接通过`ssh`登录服务器. 
-
-    - 找到git-shell的可执文件位置`whereis git-shell`
-
-    - 修改`/etc/passwd`文件
-
-        将`git:x:1001:1001:,,,:/home/git:/bin/bash`修改为`git:x:1001:1001:,,,:/home/git:/usr/bin/git-shell`
-
-        > `/usr/bin/git-shell`是git-shell可执行文件的位置. 
-
-### 使用
-
-- 创建一个git空仓库
-
-    ```shell
-    sudo git init --bare <name_repository>
-    ```
-
-- 让该仓库所属用户为`git`
-
-    ```shell
-    sudo chown -R git:git <name_repository>
-    ```
-
 # HTML学习
 
 ## HTML的网络术语
@@ -257,6 +166,7 @@ CSS 能够对网页中元素位置的排版进行像素级精确控制，支持�
 
 ## 选择器
 
+
 # nginx安装和配置
 ## 安装
 阿里云的服务器, 系统为Ubuntu16LTS
@@ -269,13 +179,25 @@ CSS 能够对网页中元素位置的排版进行像素级精确控制，支持�
 完成上面两项, 用浏览器打开公网IP, 看到如下界面就说明niginx已经安装好了. 
 ![nginx欢迎界面](pic/note/screenshot.png)
 
+## 一些有用的操作和概念
+
+### 启动和停止nginx服务
+
+```shell
+nginx -s start 
+         quit
+         reload
+```
+
 ## 配置
 By default, the configuration file is named nginx.conf and placed in the directory `/usr/local/nginx/conf`, `/etc/nginx`, or `/usr/local/etc/nginx`. 
 **In my server, the configuration file is in `/etc/nginx`.**
 
 And the nginx.conf include two configs in `/etc/nginx/conf.d/*.conf` and `/etc/nginx/sites-enabled/*` seperately.
 
-推荐先看`/etc/nginx/sites-avalible/*`下的文件. 该文件下有 
+推荐先看`/etc/nginx/sites-avalible/*`下的文件. 该文件中有三个连接, 通过这三个连接了解nginx是怎么回事. 
+
+## 
 
 ### 不要把根目录的映射放到location 块中. 
 ```
