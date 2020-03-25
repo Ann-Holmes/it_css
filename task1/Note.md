@@ -164,6 +164,23 @@ CSS 能够对网页中元素位置的排版进行像素级精确控制，支持�
 > 子级元素不继承父级元素的相对长度值，只继承它们的实际计算值。
 > 显然，百分数量总是相对的，所以和相对长度量一样，百分数量不被子级元素继承
 
+### [Viewport](https://www.cnblogs.com/2050/p/3877280.html)
+
+```html
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+```
+
+该meta标签的作用是让当前viewport的宽度等于设备的宽度，同时不允许用户手动缩放。也许允不允许用户缩放不同的网站有不同的要求，但让viewport的宽度等于设备的宽度，这个应该是大家都想要的效果，如果你不这样的设定的话，那就会使用那个比屏幕宽的默认viewport，也就是说会出现横向滚动条。
+
+| 参数 | 值|
+| ------------- | ------------------------------------------------------------ |
+| width         | 设置***layout viewport*** 的宽度，为一个正整数，或字符串"width-device" |
+| initial-scale | 设置页面的初始缩放值，为一个数字，可以带小数                 |
+| minimum-scale | 允许用户的最小缩放值，为一个数字，可以带小数                 |
+| maximum-scale | 允许用户的最大缩放值，为一个数字，可以带小数                 |
+| height        | 设置***layout viewport*** 的高度，这个属性对我们并不重要，很少使用 |
+| user-scalable | 是否允许用户进行缩放，值为"no"或"yes", no 代表不允许，yes代表允许 |
+
 ## 选择器
 
 
