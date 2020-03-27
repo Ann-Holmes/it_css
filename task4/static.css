@@ -12,12 +12,12 @@ body {
     background-color: #68cdd5;
     color: white;
     width: 100vw;
-    display: table-cell;
-    vertical-align: middle;
 }
 
 .top {
     height: 3.5rem;
+    position: absolute;
+    top: 0rem;
 }
 
 .bottom {
@@ -27,6 +27,8 @@ body {
     outline: none;
     border: none;
     white-space: pre;
+    position: absolute;
+    top: 12.75rem;
 }
 
 .left_top, .right_top {
@@ -38,19 +40,23 @@ body {
     text-align: left;
     position: relative;
     left: 1rem;
-}
-
-.center_top {
-    width: 30vw;
-    float: left;
-    text-align: center;
-    font-size: 1.2rem;
+    top: 1.25rem;
 }
 
 .right_top {
     text-align: right;
     position: relative;
     right: 1rem;
+    top: 1.25rem;
+}
+
+.center_top {
+    width: 30vw;
+    float: left;
+    text-align: center;
+    position: relative;
+    top: 1.15rem;
+    font-size: 1.2rem;
 }
 
 .icons {
@@ -61,19 +67,30 @@ body {
     top: 0.75rem
 }
 
-.account_passwd {
+.account, .passwd {
     height: 3.5rem;
+    width: 100vw;
     background-color: white;
     margin-top: 0.75rem;
     margin-bottom: 0.75rem;
 }
 
+.account {
+    position: absolute;
+    top: 3.5rem;
+}
+
+.passwd {
+    position: absolute;
+    top: 7.75rem;
+}
+
 .forget_passwd {
     font-size: 0.9rem;
     text-align: right;
-    position: relative;
+    position: absolute;
+    top: 17.25rem;
     right: 1rem;
-    margin-top: 0.5rem;
 }
 
 a:link {
