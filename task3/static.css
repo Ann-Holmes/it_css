@@ -6,7 +6,6 @@ body {
     background-color: #2bd3ec;
 }
 
-
 p.letter {
     color: white;
 }
@@ -24,18 +23,11 @@ div.main_content {
     height: 4.625rem;
     background-color: #009e96;
     border-radius: 4.625rem;
-    border: 0rem;
-}
-
-.left_logo {
-    width: 4.625rem;
-    height: 4.625rem;
 }
 
 .right_logo {
-    width: 4.625rem;
+    width: 4.512rem;
     height: 4.625rem;
     position: relative; 
     right: 0.5rem;
-    /* top: 0.2rem; */
 }
