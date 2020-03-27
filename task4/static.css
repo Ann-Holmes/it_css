@@ -89,4 +89,5 @@ a:visited {
 .enter {
     outline: none;
     border: none;
+    vertical-align: middle;
 }
