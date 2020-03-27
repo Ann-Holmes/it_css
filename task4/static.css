@@ -1,0 +1,85 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: #efeff4;
+    margin: 0vw;
+    border: 0vw;
+}
+
+.top, .bottom {
+    background-color: #68cdd5;
+    color: white;
+    width: 100vw;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.top {
+    height: 3.5rem;
+}
+
+.bottom {
+    height: 4rem;
+    text-align: center;
+    font-size: 1.2rem;
+    white-space: pre;
+}
+
+.left_top, .right_top {
+    width: 35vw;
+    float: left;
+}
+
+.left_top {
+    text-align: left;
+    position: relative;
+    left: 1rem;
+}
+
+.center_top {
+    width: 30vw;
+    float: left;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.right_top {
+    text-align: right;
+    position: relative;
+    right: 1rem;
+}
+
+.logos {
+    width: 2rem;
+    height: 2rem;
+    position: relative;
+    left: 1rem;
+    top: 0.75rem
+}
+
+.account_passwd {
+    height: 3.5rem;
+    background-color: white;
+    margin-top: 0.75rem;
+    margin-bottom: 0.75rem;
+}
+
+.forget_passwd {
+    font-size: 0.9rem;
+    text-align: right;
+    position: relative;
+    right: 1rem;
+    margin-top: 0.5rem;
+}
+
+a:link {
+    color: #68cdd5;
+    text-decoration: underline;
+}
+
+a:visited {
+    color: #68cdd5;
+    text-decoration: underline;
+}
