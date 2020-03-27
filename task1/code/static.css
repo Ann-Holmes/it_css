@@ -3,20 +3,8 @@ div.col_blank {
     float: left;
     width: 30vw;
     height: 30vw;
-    margin-left: 1vw;
-    margin-right: 1vw;
+    margin: 1vw; 
     border-radius: 2vw;
-}
-
-div.row_blank {
-    background-color: transparent;
-    /* float: left; */
-    width: 96vw;
-    height: 30vw;
-    margin-top: 2vw;
-    margin-bottom: 2vw;
-    margin-left: 0vw;
-    margin-right: 0vw;
 }
 
 div.self_fit {
