@@ -14,6 +14,12 @@
 }
 ```
 
+# `header` 标签
+
+- `header` 是一个块级标签
+- `header` 的[全局属性](https://www.runoob.com/tags/ref-standardattributes.html)
+- `header` 的[事件属性](https://www.runoob.com/tags/ref-eventattributes.html)
+
 # [`input`标签](https://www.w3school.com.cn/tags/tag_input.asp)
 
 目前会用到的属性: 
