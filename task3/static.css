@@ -1,0 +1,41 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: #2bd3ec;
+}
+
+
+p.letter {
+    color: white;
+}
+
+div.main_content {
+    text-align: center;
+    margin-left: 15vw;
+    margin-right: 15vw;
+    margin-top: 10vw;
+    margin-bottom: 20vw;
+}
+
+.bottom_logo {
+    width: 4.625rem;
+    height: 4.625rem;
+    background-color: #009e96;
+    border-radius: 4.625rem;
+    border: 0rem;
+}
+
+.left_logo {
+    width: 4.625rem;
+    height: 4.625rem;
+}
+
+.right_logo {
+    width: 4.625rem;
+    height: 4.625rem;
+    position: relative; 
+    right: 0.5rem;
+    /* top: 0.2rem; */
+}
