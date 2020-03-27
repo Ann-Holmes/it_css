@@ -24,6 +24,8 @@ body {
     height: 4rem;
     text-align: center;
     font-size: 1.2rem;
+    outline: none;
+    border: none;
     white-space: pre;
 }
 
@@ -51,7 +53,7 @@ body {
     right: 1rem;
 }
 
-.logos {
+.icons {
     width: 2rem;
     height: 2rem;
     position: relative;
@@ -82,4 +84,9 @@ a:link {
 a:visited {
     color: #68cdd5;
     text-decoration: underline;
+}
+
+.enter {
+    outline: none;
+    border: none;
 }
