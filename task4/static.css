@@ -113,12 +113,6 @@ a:visited {
 }
 
 input::-webkit-input-placeholder,
-/* Webkit browsers */
-input:-moz-placeholder,
-/* Mozilla Firefox 4 to 18 */
-input::-moz-placeholder,
-/* Mozilla Firefox 19+ */
-input:-ms-input-placeholder {
-    /* Internet Explorer 10+ */
+textarea::-webkit-input-placeholder {
     color: #bfbfbf;
 }
