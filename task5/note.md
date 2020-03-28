@@ -119,3 +119,10 @@ flex属性是flex-grow, flex-shrink 和 flex-basis的简写，默认值为0 1 au
 ### align-self属性
 
 align-self属性允许单个项目有与其他项目不一样的对齐方式，可覆盖align-items属性。
+
+
+
+# [`footer`标签](https://www.runoob.com/tags/tag-footer.html)
+
+> 块级元素
+

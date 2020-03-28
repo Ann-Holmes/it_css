@@ -4,61 +4,62 @@ html {
 
 body {
     background-color: white;
-    margin: 0vw;
-    border: 0vw;
-}
-
-.top, .bottom {
-    background-color: #68cdd5;
-    color: white;
-    display: flex;
-    width: 100vw;
+    margin: 0;
+    border: 0;
 }
 
 .top {
+    background-color: #68cdd5;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
     height: 3.5rem;
-    position: absolute;
-    top: 0rem;
+    position: fixed;
+    top: 0;
 }
+
 
 .bottom {
+    display: flex;
     height: 4rem;
-    text-align: center;
     font-size: 1.2rem;
-    outline: none;
-    border: none;
-    white-space: pre;
-    position: absolute;
-    top: 12.75rem;
+    justify-content: space-between;
+    width: 100vw;
+    position: fixed;
+    bottom: 0;
 }
 
-.left_top, .right_top {
-    width: 35vw;
-    float: left;
+.bottom_left,
+.bottom_right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 3rem;
+    width: 48vw;
+    margin: 0.5rem 0.5rem;
+    border: 0.1rem solid #68cdd5;
+    border-radius: 0.5rem;
+    background-color: #ffffff;
+    color: #68cdd5;
+}
+
+.bottom_right {
+    background-color: #68cdd5;
+    color: #ffffff;
 }
 
 .left_top {
     text-align: left;
     position: relative;
     left: 1rem;
-    top: 1rem;
-    font-size: 1.5rem;
-}
-
-.right_top {
-    text-align: right;
-    position: relative;
-    right: 1rem;
-    top: 1.25rem;
+    font-size: 1.75rem;
 }
 
 .center_top {
-    width: 30vw;
-    float: left;
     text-align: center;
-    position: relative;
-    top: 1.15rem;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
 }
 
 .simple_intro {
@@ -66,30 +67,61 @@ body {
     background-color: burlywood;
 }
 
-.icons {
+.line {
     width: 2rem;
     height: 2rem;
-    position: relative;
-    left: 1rem;
-    top: 0.75rem
 }
 
-.skill, .content {
-    border-bottom: 0.2rem;
-    border-color: grey;
-    height: 3.5rem;
-    vertical-align: middle;
+.icons {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.border_skill,
+.border_content {
+    border-width: 0 0 0.05rem;
+    border-bottom-style: solid;
+    border-color: #d0d0d0;
+}
+
+.border_content {
+    position: relative;
+    left: 1rem;
+}
+
+.skill,
+.content,
+.sub_content {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    position: relative;
+    margin: 1.5rem 0;
 }
 
 .skill {
-    width: 100vw;
+    left: 1rem;
 }
 
-.content {
-    width: 98vw;
+.content,
+.sub_content {
+    left: 1.5rem;
+    width: 100vw;
+    right: 1.5rem;
+}
+
+.sub_content {
+    margin: 0.5rem 0;
+}
+
+.items_left {
+    width: 4rem;
+    color: #d0d0d0;
+}
+
+.items_right {
+    flex: 1;
     position: relative;
-    right: 1vw;
-    left: 1vw;
 }
 
 .account {
@@ -108,6 +140,10 @@ body {
     position: absolute;
     top: 17.25rem;
     right: 1rem;
+}
+
+.price {
+    color: #ff0000;
 }
 
 a:link {
