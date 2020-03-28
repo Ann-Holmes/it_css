@@ -3,15 +3,15 @@ html {
 }
 
 body {
-    background-color: #efeff4;
+    background-color: white;
     margin: 0vw;
     border: 0vw;
 }
 
-.top,
-.bottom {
+.top, .bottom {
     background-color: #68cdd5;
     color: white;
+    display: flex;
     width: 100vw;
 }
 
@@ -32,8 +32,7 @@ body {
     top: 12.75rem;
 }
 
-.left_top,
-.right_top {
+.left_top, .right_top {
     width: 35vw;
     float: left;
 }
@@ -42,7 +41,8 @@ body {
     text-align: left;
     position: relative;
     left: 1rem;
-    top: 1.25rem;
+    top: 1rem;
+    font-size: 1.5rem;
 }
 
 .right_top {
@@ -61,6 +61,11 @@ body {
     font-size: 1.2rem;
 }
 
+.simple_intro {
+    height: 14rem;
+    background-color: burlywood;
+}
+
 .icons {
     width: 2rem;
     height: 2rem;
@@ -69,13 +74,22 @@ body {
     top: 0.75rem
 }
 
-.account,
-.passwd {
+.skill, .content {
+    border-bottom: 0.2rem;
+    border-color: grey;
     height: 3.5rem;
+    vertical-align: middle;
+}
+
+.skill {
     width: 100vw;
-    background-color: white;
-    margin-top: 0.75rem;
-    margin-bottom: 0.75rem;
+}
+
+.content {
+    width: 98vw;
+    position: relative;
+    right: 1vw;
+    left: 1vw;
 }
 
 .account {
@@ -110,15 +124,4 @@ a:visited {
     outline: none;
     border: none;
     vertical-align: middle;
-}
-
-input::-webkit-input-placeholder,
-/* Webkit browsers */
-input:-moz-placeholder,
-/* Mozilla Firefox 4 to 18 */
-input::-moz-placeholder,
-/* Mozilla Firefox 19+ */
-input:-ms-input-placeholder {
-    /* Internet Explorer 10+ */
-    color: #bfbfbf;
 }
