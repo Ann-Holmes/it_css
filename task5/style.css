@@ -70,7 +70,8 @@ body {
     top: 3.5rem;
     bottom: 4rem;
     width: 100vw;
-    overflow: auto;
+    overflow-x: hidden;
+    overflow-y: auto;
     overflow-scrolling: touch;
     -webkit-overflow-scrolling: touch;
 }
@@ -149,9 +150,9 @@ body {
 
 .border_content {
     position: relative;
-    width: 90vw;
-    left: 1rem;
-    right: 1rem;
+    width: 96vw;
+    left: 2vw;
+    right: 2vw;
 }
 
 .skill,
@@ -165,14 +166,14 @@ body {
 }
 
 .skill {
-    left: 1rem;
+    left: 2vw;
 }
 
 .content,
 .sub_content {
-    left: 1rem;
-    width: 80vw;
-    right: 1rem;
+    left: 3vw;
+    right: 3vw;
+    width: 94vw;
 }
 
 .sub_content {
