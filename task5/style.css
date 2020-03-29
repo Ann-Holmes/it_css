@@ -114,6 +114,7 @@ body {
     width: 100vw;
     height: 14rem;
     background-image: url(source/background.png);
+    background-size: cover;
     background-position: center;
     background-color: #dfdfdf;
     color: #ffffff;
