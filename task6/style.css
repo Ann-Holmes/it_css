@@ -1,0 +1,226 @@
+html {
+    height: 100vw;
+    font-size: 62.5%;
+}
+
+body {
+    height: 100vw;
+    margin: 0;
+    border: 0;
+    background-color: white;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+}
+
+.bar {
+    position: fixed;
+    top: 0;
+    height: 3.5rem;
+    background-color: #68cdd5;
+    color: white;
+}
+
+.status {
+    position: absolute;
+    top: 3.5rem;
+    height: 3rem;
+    border-width: 0 0 0.01rem;
+    border-bottom-style: solid;
+    border-color: #dfdfdf;
+}
+
+.my_container {
+    display: -webkit-box;
+    /* 老版本语法: Safari, iOS, Android browser, older WebKit browsers. */
+    display: -moz-box;
+    /* 老版本语法: Firefox (buggy) */
+    display: -ms-flexbox;
+    /* 混合版本语法: IE 10 */
+    display: -webkit-flex;
+    /* 新版本语法: Chrome 21+ */
+    display: flex;
+    /* 新版本语法: Opera 12.1, Firefox 22+ */
+    -moz-flex-direction: column;
+    /* firefox */
+    -webkit-flex-direction: column;
+    /* safair,opera,chorme */
+    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-flex-wrap: nowrap;
+    /*Safari,Opera,Chrome*/
+    flex-wrap: nowrap;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -moz-justify-content: space-between;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    bottom: 0;
+    font-size: 1.2rem;
+    width: 100vw;
+    height: 4rem;
+    border-width: 0.01rem 0 0;
+    border-top-style: solid;
+    border-color: #dfdfdf;
+    background-color: #f9f9f9;
+}
+
+.main {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    position: absolute;
+    top: 3.5rem;
+    bottom: 4rem;
+    width: 100vw;
+    overflow-x: hidden;
+    overflow-y: auto;
+    overflow-scrolling: touch;
+    -webkit-overflow-scrolling: touch;
+}
+
+.bottom_left,
+.bottom_right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 3rem;
+    width: 48vw;
+    margin: 0.5rem 0.5rem;
+    border: 0.1rem solid #68cdd5;
+    border-radius: 0.5rem;
+    background-color: #ffffff;
+    color: #68cdd5;
+}
+
+.bottom_right {
+    background-color: #68cdd5;
+    color: #ffffff;
+}
+
+.left_top {
+    text-align: left;
+    position: relative;
+    left: 1rem;
+    font-size: 1.5rem;
+}
+
+.center_top {
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.simple_intro {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 100vw;
+    height: 14rem;
+    background-image: url(source/background.png);
+    background-size: cover;
+    background-position: center;
+    background-color: #dfdfdf;
+    color: #ffffff;
+}
+
+.avatar {
+    width: 7rem;
+    height: 7rem;
+    margin: 1.5rem;
+    border-radius: 3.5rem;
+    background-color: #ffffff;
+}
+
+.name {
+    font-size: 1.2rem;
+}
+
+
+.icons {
+    background: url(source/icons.png) no-repeat;
+}
+
+.border_skill,
+.border_content {
+    border-width: 0 0 0.05rem;
+    border-bottom-style: solid;
+    border-color: #d0d0d0;
+}
+
+.border_content {
+    position: relative;
+    width: 96vw;
+    left: 2vw;
+    right: 2vw;
+}
+
+.skill,
+.content,
+.sub_content {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    position: relative;
+    margin: 1.5rem 0;
+}
+
+.skill {
+    left: 2vw;
+}
+
+.content,
+.sub_content {
+    left: 3vw;
+    right: 3vw;
+    width: 94vw;
+}
+
+.sub_content {
+    margin: 0.5rem 0;
+}
+
+.items_left {
+    width: 4rem;
+    color: #d0d0d0;
+}
+
+.items_right {
+    flex: 1;
+}
+
+.price {
+    color: #ff0000;
+}
+
+/* 图标 */
+.map_location {
+    position: relative;
+    right: 2rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    background-position: 0 -17px;
+    background-size: cover;
+    background-color: transparent;
+}
+
+/* 颜色 */
+.dark-green {
+    background-color: #45A9B3;
+}
+
+.white {
+    background-color: #ffffff;
+    color: #68cdd5;
+}
