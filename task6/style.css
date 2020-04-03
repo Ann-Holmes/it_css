@@ -1,3 +1,4 @@
+/* 基本定义 */
 html {
     height: 100vw;
     font-size: 62.5%;
@@ -8,30 +9,6 @@ body {
     margin: 0;
     border: 0;
     background-color: white;
-}
-
-.header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100vw;
-}
-
-.bar {
-    position: fixed;
-    top: 0;
-    height: 3.5rem;
-    background-color: #68cdd5;
-    color: white;
-}
-
-.status {
-    position: absolute;
-    top: 3.5rem;
-    height: 3rem;
-    border-width: 0 0 0.01rem;
-    border-bottom-style: solid;
-    border-color: #dfdfdf;
 }
 
 .my_container {
@@ -62,6 +39,36 @@ body {
     height: 100%;
 }
 
+.icons {
+    background: url(source/icons.png) no-repeat;
+}
+
+/* 头部 */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+}
+
+.bar {
+    position: fixed;
+    top: 0;
+    height: 3.5rem;
+    background-color: #68cdd5;
+    color: white;
+}
+
+.status {
+    position: absolute;
+    top: 3.5rem;
+    height: 3rem;
+    border-width: 0 0 0.01rem;
+    border-bottom-style: solid;
+    border-color: #dfdfdf;
+}
+
+/* 底部 */
 .footer {
     display: flex;
     justify-content: space-between;
@@ -74,21 +81,6 @@ body {
     border-top-style: solid;
     border-color: #dfdfdf;
     background-color: #f9f9f9;
-}
-
-.main {
-    -webkit-box-flex: 1;
-    -webkit-flex: 1;
-    -ms-flex: 1;
-    flex: 1;
-    position: absolute;
-    top: 3.5rem;
-    bottom: 4rem;
-    width: 100vw;
-    overflow-x: hidden;
-    overflow-y: auto;
-    overflow-scrolling: touch;
-    -webkit-overflow-scrolling: touch;
 }
 
 .bottom_left,
@@ -122,95 +114,89 @@ body {
     font-size: 1.2rem;
 }
 
-.simple_intro {
-    display: flex;
-    justify-content: start;
-    align-items: center;
+/* 中间部分的容器 */
+.main {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    position: absolute;
+    top: 6.5rem;
+    bottom: 4rem;
     width: 100vw;
-    height: 14rem;
-    background-image: url(source/background.png);
-    background-size: cover;
-    background-position: center;
-    background-color: #dfdfdf;
-    color: #ffffff;
-}
-
-.avatar {
-    width: 7rem;
-    height: 7rem;
-    margin: 1.5rem;
-    border-radius: 3.5rem;
-    background-color: #ffffff;
-}
-
-.name {
-    font-size: 1.2rem;
+    overflow-x: hidden;
+    overflow-y: auto;
+    overflow-scrolling: touch;
+    -webkit-overflow-scrolling: touch;
 }
 
 
-.icons {
-    background: url(source/icons.png) no-repeat;
-}
-
-.border_skill,
-.border_content {
+/* 条目的定义 */
+.items {
+    padding: 1rem;
     border-width: 0 0 0.05rem;
     border-bottom-style: solid;
-    border-color: #d0d0d0;
+    border-color: #dbdbdb;
 }
 
-.border_content {
-    position: relative;
-    width: 96vw;
-    left: 2vw;
-    right: 2vw;
-}
-
-.skill,
-.content,
-.sub_content {
+.date-and-location {
     display: flex;
-    justify-content: start;
     align-items: center;
-    position: relative;
-    margin: 1.5rem 0;
+    color: #b6b6b6;
 }
 
-.skill {
-    left: 2vw;
+.details {
+    display: flex;
+    align-items: center;
+
 }
 
-.content,
-.sub_content {
-    left: 3vw;
-    right: 3vw;
-    width: 94vw;
+.details-left {
+    text-align: left;
 }
 
-.sub_content {
-    margin: 0.5rem 0;
-}
-
-.items_left {
-    width: 4rem;
-    color: #d0d0d0;
-}
-
-.items_right {
-    flex: 1;
-}
-
-.price {
-    color: #ff0000;
+.details-right {
+    text-align: right;
 }
 
 /* 图标 */
+.blank {
+    width: 1rem;
+    height: 1rem;
+}
+
 .map_location {
     position: relative;
     right: 2rem;
     width: 1.5rem;
     height: 1.5rem;
     background-position: 0 -17px;
+    background-size: cover;
+    background-color: transparent;
+}
+
+.calender {
+    position: relative;
+    width: 1rem;
+    height: 1rem;
+    background-position: 0 0;
+    background-size: cover;
+    background-color: transparent;
+}
+
+.location {
+    position: relative;
+    width: 1rem;
+    height: 1rem;
+    background-position: 0 -62px;
+    background-size: cover;
+    background-color: transparent;
+}
+
+.arrow {
+    width: 1rem;
+    height: 1rem;
+    background-position: 0 -70px;
     background-size: cover;
     background-color: transparent;
 }
@@ -223,4 +209,8 @@ body {
 .white {
     background-color: #ffffff;
     color: #68cdd5;
+}
+
+.red {
+    color: #ff0000;
 }
