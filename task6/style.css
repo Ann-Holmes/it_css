@@ -42,6 +42,7 @@ body {
 .icons {
     background: url(source/icons.png) no-repeat;
     background-size: 100% 700%;
+    background-color: transparent;
 }
 
 /* 头部 */
@@ -69,13 +70,21 @@ body {
     border-color: #dfdfdf;
 }
 
+.left-top {
+    text-align: left;
+    position: relative;
+    left: 1rem;
+    font-size: 1.5rem;
+}
+
 /* 底部 */
 .footer {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    align-items: center;
     position: fixed;
     bottom: 0;
-    font-size: 1.2rem;
+    font-size: 0.8rem;
     width: 100vw;
     height: 4rem;
     border-width: 0.01rem 0 0;
@@ -84,35 +93,30 @@ body {
     background-color: #f9f9f9;
 }
 
-.bottom_left,
-.bottom_right {
+.footer-items {
     display: flex;
-    align-items: center;
     justify-content: center;
-    height: 3rem;
-    width: 48vw;
-    margin: 0.5rem 0.5rem;
-    border: 0.1rem solid #68cdd5;
-    border-radius: 0.5rem;
-    background-color: #ffffff;
+    align-items: center;
+    width: 3.5rem;
+    height: 3.5rem;
+}
+
+.footer-left {
     color: #68cdd5;
 }
 
-.bottom_right {
+.footer-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 3rem;
+    height: 3rem;
     background-color: #68cdd5;
-    color: #ffffff;
+    border-radius: 1.75rem;
 }
 
-.left_top {
-    text-align: left;
-    position: relative;
-    left: 1rem;
-    font-size: 1.5rem;
-}
-
-.center_top {
-    text-align: center;
-    font-size: 1.2rem;
+.footer-right {
+    color: #b6b6b6;
 }
 
 /* 中间部分的容器 */
@@ -146,6 +150,11 @@ body {
     color: #b6b6b6;
 }
 
+.out-details {
+    display: flex;
+    justify-content: space-between;
+}
+
 .details {
     display: flex;
     align-items: center;
@@ -166,41 +175,55 @@ body {
     height: 1rem;
 }
 
-.map_location {
-    position: relative;
-    right: 2rem;
+/* 大图标 */
+.map-location,
+.house, 
+.pencil, 
+.person {
     width: 1.5rem;
     height: 1.5rem;
-    background-position: 0 -1.3rem;
-    background-size: cover;
-    background-color: transparent;
 }
 
-.calender {
+.map-location-coords {
     position: relative;
-    width: 1rem;
-    height: 1rem;
-    background-position: 0 0;
-    background-size: cover;
-    background-color: transparent;
+    right: 2rem;
+    background-position: 0 16%;
 }
 
-.location {
-    position: relative;
-    width: 1rem;
-    height: 1rem;
-    background-position: 0 83%;
-    background-size: cover;
-    background-color: transparent;
+.house-coords {
+    background-position: 0 33%;
 }
 
+.pencil-coords {
+    background-position: 0 67%;
+}
+
+.person-coords {
+    background-position: 0 50%;
+}
+
+/* 小图标 */
+.calender, 
+.location, 
 .arrow {
     width: 1rem;
     height: 1rem;
-    background-position: 0 100%;
-    background-size: cover;
-    background-color: transparent;
 }
+
+.calender-coords {  
+    background-position: 0 0;
+}
+
+.location-coords {
+    background-position: 0 83%;
+}
+
+.arrow-coords {
+    background-position: 0 100%;
+}
+
+
+
 
 /* 颜色 */
 .dark-green {
