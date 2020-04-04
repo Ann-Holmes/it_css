@@ -41,7 +41,7 @@ body {
 
 .icons {
     background: url(source/icons.png) no-repeat;
-    background-size: 5.4rem 36.3rem;
+    background-size: 100% 700%;
 }
 
 /* 头部 */
@@ -189,7 +189,7 @@ body {
     position: relative;
     width: 1rem;
     height: 1rem;
-    background-position: 0 -5rem;
+    background-position: 0 83%;
     background-size: cover;
     background-color: transparent;
 }
@@ -197,7 +197,7 @@ body {
 .arrow {
     width: 1rem;
     height: 1rem;
-    background-position: 0 -5.6rem;
+    background-position: 0 100%;
     background-size: cover;
     background-color: transparent;
 }
